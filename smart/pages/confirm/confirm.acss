@@ -1,0 +1,275 @@
+
+page{
+  background-color:#f2f3f7 ;
+  font-family: "My Font";
+}
+@font-face {
+  font-family: "My Font";
+  src: url("/fonts/HYQiHei_75S.ttf") format("woff2"),
+       
+     
+}
+
+
+.btn-list-default {
+  margin-bottom: -24rpx;
+}
+
+.btn {
+  margin: 0 12px;
+}
+
+.data{
+
+  width: 700rpx;
+  height: 250rpx;
+  margin: 0rpx auto;
+  background-color: white;
+  border-radius: 15rpx;
+}
+.data>view:first-of-type{
+
+  padding: 24rpx;
+  font-weight: 600;
+}
+.datainfo{
+  width: 700rpx;
+  height: 150rpx;
+ 
+}
+
+
+.noselect{
+  width: 150rpx;
+  height:130rpx ;
+  margin: 0rpx 8rpx;
+  border-radius: 15rpx;
+  border:2rpx solid #4598de;
+  float: left;
+}
+
+.selected{
+
+  width: 150rpx;
+  height:130rpx ;
+  margin: 0rpx 8rpx;
+  border-radius: 15rpx;
+  border:2rpx solid #676767;
+  float: left;
+
+}
+
+
+
+.datainfo>view>view{
+  font-size: 24rpx;
+  width: 140rpx;
+  text-align: center;
+  padding: 6rpx 0rpx;
+  font-weight: bold;
+}
+.datainfo>view>view:last-of-type{
+  height: 100rpx;
+
+}
+#buy{
+  width: 700rpx;
+  height: 1180rpx;
+  margin: 30rpx auto;
+  background-color: white;
+  border-radius: 15rpx;
+}
+
+#buy>view:first-of-type{
+  padding: 28rpx;
+  font-weight: bold;
+}
+#buy>view:nth-of-type(2){
+  padding: 28rpx;
+  font-weight: bold;
+}
+.tejia{
+
+ height: 60rpx;
+ width: 640rpx;
+ margin: 0rpx auto;
+ border-bottom: 3rpx solid #efefef;
+}
+
+.buynumber{
+  width: 660rpx;
+  height: 160rpx;
+  margin: 15rpx auto;
+}
+.buynumber>view:first-of-type{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  width: 150rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  float: left;
+}
+
+.stepupdate{
+
+padding-top: 50rpx;
+}
+
+
+
+.buynumber>view:nth-of-type(2){
+    float: right;
+    width: 240rpx;
+  height: 150rpx;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24rpx;
+}
+.actions .amd-button {
+  width: 47%;
+}
+
+:global(.amd-stepper){
+  height: 100rpx;
+}
+
+
+.thepriceofone{
+  width: 620rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+}
+.thepriceofone>text:first-of-type{
+  float: left;
+  font-weight: bold;
+}
+.thepriceofone>text:nth-of-type(2){
+  float: right;
+  color: #f56706;
+  font-weight: bold;
+  font-size: 34rpx;
+}
+
+.buykonw{
+
+  width: 660rpx;
+  height: 120rpx;
+  margin: 30rpx auto;
+}
+
+.triper{
+  width: 660rpx;
+  height:120rpx;
+
+  margin: 0rpx auto;
+}
+.triper>view{
+  width: 230rpx;
+  height: 40rpx;
+  margin: 3rpx 10rpx;
+  float: left;
+}
+
+.zfb{
+  background-color:#f6f6f6;color:#3073bc;font-size:24rpx;text-align:center;
+  line-height: 40rpx;
+  border-radius: 20rpx;
+  width: 120rpx;
+  display: flex;
+  
+}
+.zfb>image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 5rpx;
+  margin-left: 10rpx;
+}
+.zfb>text{
+  
+  padding-bottom: 20rpx;
+  padding-left: 5rpx;
+  font-weight: 500;
+}
+.youke{
+  font-size: 24rpx;
+  color:#3073bc;
+  background-color: #e8f1ff;
+  width: 90rpx;
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+
+.formcommit{
+  width: 660rpx;
+  height:250rpx;
+
+  margin: 0rpx auto;
+}
+
+.sumprice{
+
+  width:755rpx;
+  height:120rpx;
+  background-color: white;
+
+}
+.sumprice>view{
+  width: 690rpx;
+  height: 100rpx;
+  margin: 30rpx auto;
+}
+.sumprice>view>view:first-of-type{
+  width: 160rpx;
+  height: 60rpx;
+  padding-top: 30rpx;
+  text-align: center;
+  float: left;
+}
+.zhifu{
+  color: white;
+  width:170rpx ;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  float:right;background-color:#ff6b09;border-radius:20rpx
+}
+.sumprice>view>view:nth-of-type(2){
+  width: 160rpx;
+  height: 60rpx;
+  padding-top: 30rpx;
+  text-align: center;
+  float: left;
+
+}
+
+.mistakeinput{
+  position: absolute;
+  bottom:-30rpx ;
+  left: 208rpx;
+  
+  color: #da712e;
+}
+
+
+.shuru{
+
+  text-align:left;
+  padding: 0;
+    font-size: 17px;
+    text-align: left;
+    color: #333;
+    display: flex;
+}
+
+
+:global(.amd-form-item){
+
+  padding: 12px 12px 22px 16px;
+}
+

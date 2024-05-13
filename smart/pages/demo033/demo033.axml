@@ -1,0 +1,9 @@
+<view>
+  
+
+
+
+<button size="default" onTap="fasong" type="primary">Button</button>
+<button style="margin-top:10rpx" size="default" onTap="fasong2" type="primary">Button</button>
+
+</view>

@@ -1,0 +1,150 @@
+<view>
+
+
+    <view class="data">
+      <view>游玩日期</view>
+      <view class="datainfo">
+          <view onTap="changeselect1"  class="{{select}}">
+              <view style="color:#3e95e9">今天{{today}}</view>
+              <view style="color:#e96d48">￥{{ticketinfo.price}}</view>
+              <view style="color:#a6a6a6">无限库存</view>
+          </view>
+          <view onTap="changeselect2" class="{{select1}}">
+            <view style="color:#3e95e9">明天{{tomorrow}}</view>
+            <view style="color:#e96d48">￥{{ticketinfo.price}}</view>
+            <view style="color:#a6a6a6">无限库存</view>
+        </view>
+        <view onTap="changeselect3" class="{{select2}}">
+          <view style="color:#3e95e9">后天{{dayAfterTomorrow}}</view>
+          <view style="color:#e96d48">￥{{ticketinfo.price}}</view>
+          <view style="color:#a6a6a6">无限库存</view>
+      </view>
+       
+      <view class="{{selected}}" style="text-aligg:center;">
+       <view onTap="handleClick" style="height:128rpx;line-height: 118rpx;font-size:34rpx;color:#3d96e2">
+        更多 &gt
+       </view>
+       <calendar visible="{{calendarVisible}}" value="{{calendarValue}}" isTabbar onClose="handleClick" onConfirm="handleCalendarConfirm" />
+    </view>
+      </view>
+
+
+      
+    </view>
+   
+
+      <view id="buy">
+        
+        <view>
+          购买门票
+        </view>
+
+        <view>
+          {{ticketinfo.tname}}
+        </view>
+
+        <view class="tejia" style="font-size:24rpx;color:#999999;">
+          其它; 特价票
+        </view>
+
+        <view class="buynumber">
+            <view>
+              购买数量
+            </view>
+            <view>
+                <view class="stepupdate">
+                <stepper 
+                  step="{{1}}"
+                  value="{{value}}"
+                  inputWidth="60px"
+                  onChange="handleChange"
+                  />
+                </view>
+           
+            </view>
+        </view>
+
+        <view class="thepriceofone">
+          <text>单价</text>
+          <text>￥{{ticketinfo.price}}</text>
+        </view>
+
+
+        <view class="buykonw">
+            <view class="btn-list">
+              <button 
+                a:for="{{list}}" 
+                type="{{item.type}}">
+                购买须知 &gt
+              </button>
+            </view>
+        </view>
+
+        <!-- 游客信息 -->
+        <view class="triper">
+            <view style="font-size:34rpx;font-weight:bold">
+              游客信息
+            </view>
+            <view class="zfb" style="">
+              <image mode="scaleToFill" src="https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/image/icon/zhifbao.png" />
+              <text>支付宝一键授权</text> 
+            </view>
+            <view class="youke" style="width:130rpx">
+              常用游客&gt
+            </view>
+            <view style="font-size:24rpx;color:#6e6e6e;padding-top:15rpx">
+            <text>需填写  <text style="color:#d4742a">&nbsp1&nbsp</text>  位游客信息</text>
+            </view>
+        </view>
+
+        <!-- 游客填写基础信息 -->
+
+        <view class="formcommit">
+          <view class="demo">
+            <form 
+                form="{{form}}" 
+                ref="getForm"
+                onFinish="handleSubmit"
+                initialValues="{{initialValues}}"
+                onValuesChange="handleValuesChange">
+                <form-item
+                    label="姓名"
+                    name="account"
+                    form="{{form}}">
+                    <input class="shuru" onInput="bindInput"    mode="form" value="{{yname}}"  placeholder="请输入姓名"/>
+                    <text  class="mistakeinput" a:if="{{nameshow}}" style="font-size:20rpx;">姓名长度为2-16</text>
+                </form-item>
+                <form-item
+                    label="手机号"
+                    name="account"
+                    form="{{form}}">
+                    <input class="shuru" onInput="bindInput2"    mode="form" value="{{ynumber}}"  placeholder="请输入手机号"/>
+                    <text class="mistakeinput" a:if="{{phoneshow}}" style="font-size:20rpx">手机号码输入有误</text>
+                </form-item>
+                <form-item
+                label="身份证号"
+                name="password"
+                form="{{form}}">
+                <input class="shuru" onInput="bindInput3"    mode="form" value="{{yid}}"  placeholder="请输入身份证号"/>
+                <text class="mistakeinput" a:if="{{idshow}}" style="font-size:20rpx">证件号码输入有误</text>
+            </form-item>
+                
+            </form>
+           
+          </view>
+        </view>
+
+      </view>
+
+      <view class="sumprice">
+        <view>
+            <view>总额<text style="color:#fa5033;font-size:20rpx">￥</text><text style="color:#fa5033;font-weight:bold">{{sumprice}}</text></view>
+            <view style="padding-left:190rpx;color:#979797">明细</view>
+            <view onTap="payticket" class="zhifu" style="" >支付</view>
+        </view>
+       
+      </view>
+     
+
+
+</view>

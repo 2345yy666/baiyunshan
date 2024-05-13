@@ -1,0 +1,316 @@
+
+page{
+
+  
+  background-color: #f3f3f3;font-family: "My Font";
+  font-weight: normal;
+}
+.content{
+
+
+  width:750rpx ;
+  height: 1500rpx;
+  margin: 0rpx auto;
+  background: linear-gradient(to bottom, #ff8e40, white);
+
+}
+
+
+.confirmmain{
+
+  width: 750rpx;
+  height: 250rpx;
+
+
+
+}
+.querdd{
+
+  width: 710rpx;
+  height: 1200rpx;
+
+ margin: 0rpx auto;
+  background-color: white;
+
+  border-radius: 20rpx;
+
+}
+
+.dfkinfo{
+
+  width: 620rpx;
+  height: 160rpx;
+  margin: 0rpx auto;
+  padding-top: 50rpx;
+
+}
+.dfkinfo>view{
+  margin: 15rpx 0rpx;
+  color: black;
+  font-size: 27rpx;
+  font-weight: 500;
+  letter-spacing: 0.1mm;
+ 
+}
+.dfkinfo>view:first-of-type{
+
+  font-weight: 600;
+  color: black;
+  font-size: 42rpx;
+}
+
+ 
+.next{
+
+  width:650rpx ;
+  height:120rpx ;
+  padding-top: 30rpx;
+  margin: 0rpx auto;
+
+}
+.next>view{
+
+
+  float: left;
+  margin: 0rpx 20rpx;
+  width: 280rpx;
+  height: 80rpx;
+  border: 2rpx solid #d8d8d8;
+  border-radius: 20rpx;
+
+}
+.next>view>view{
+    width: 180rpx;
+    height:50rpx ;
+    margin: 0rpx auto;
+   display: flex;
+   padding-top: 20rpx;
+   line-height: 30rpx;
+}
+
+.next>view>view>image{
+
+
+    width: 50rpx;
+    height: 40rpx;
+}
+
+.ordernum{
+
+  width: 660rpx;
+  height: 75rpx;
+  margin: 0rpx auto;
+
+
+}
+
+#line{
+  width:710rpx ;
+
+  height: 10rpx;
+  border-top: 2rpx solid #e4e4e4;
+}
+
+
+.tickcontent{
+
+
+    width: 660rpx;
+    height: 700rpx;
+    margin: 20rpx auto;
+
+
+
+
+}
+.thetickinfo{
+
+
+  height: 600rpx;
+  padding-top: 15rpx;
+}
+
+.thetickinfo>view
+{
+
+  height: 70rpx;
+
+}
+
+
+
+
+.thetickinfo>view>view{
+  float: left;
+  height: 70rpx;
+
+}
+.thetickinfo>view>view:first-of-type{
+
+  width: 160rpx;
+  font-size: 26rpx;
+  color: #686868;
+}
+.thetickinfo>view>view:nth-of-type(2){
+
+  width: 460rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: black;
+  line-height: 30rpx;
+}
+
+
+
+.youke{
+
+  width: 750rpx;
+  height: 600rpx;
+  
+  margin-top: -70rpx;
+  background-color: white;
+  z-index: 100;
+}
+
+.youkeinfo{
+
+  width:660rpx ;
+  height:200rpx ;
+  margin: 0rpx auto;
+  
+}
+.myinfo{
+
+    width: 660rpx;
+    height: 200rpx;
+}
+
+.myinfo>view{
+
+
+  float: left;
+
+}
+.myinfo>view:first-of-type{
+
+  padding-top: 25rpx;
+    width: 160rpx;
+    height: 120rpx;
+    font-size: 26rpx;
+    color: #686868;
+}
+
+.myinfo>view:nth-of-type(2){
+
+
+  width: 360rpx;
+  height: 160rpx;
+  font-size: 24rpx;
+  font-family: "My Font"
+  
+}
+.myinfo>view:nth-of-type(2)>view{
+  margin: 20rpx 0rpx;
+  font-weight: 500;
+  color: black;
+
+}
+
+.order{
+
+  width: 660rpx;
+  height: 220rpx;
+  margin: 0rpx auto;
+}
+.order>view{
+  font-size: 24rpx;
+  margin: 15rpx 0rpx;
+
+}
+.order>view>text:first-of-type{
+
+
+  width: 160rpx;
+  display: inline-block;
+ 
+}
+
+.zhifu{
+
+  width: 750rpx;
+  height: 120rpx;
+}
+
+
+.zhifu>view{
+
+  width: 660rpx;
+  height: 100rpx;
+  margin: 0rpx auto;
+
+}
+
+.sumprice{
+
+  width:755rpx;
+  height:120rpx;
+  background-color: white;
+  box-shadow: 0 -3px 5px -5px rgba(0, 0, 0, 0.5);
+}
+.sumprice>view{
+  width: 690rpx;
+  height: 100rpx;
+  margin: 30rpx auto;
+}
+.sumprice>view>view:first-of-type{
+  width: 160rpx;
+  height: 60rpx;
+  padding-top: 30rpx;
+  text-align: center;
+  float: left;
+}
+.zhifu{
+  width:170rpx ;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  float:right;border-radius:20rpx;
+  border: 4rpx solid #d9d9d9;
+ 
+}
+
+.zhifu2{
+  
+  
+
+
+
+
+  color: white;
+  width:170rpx ;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  float:right;background-color:#ff6b09;border-radius:20rpx;
+  margin-right: 10rpx;
+  border: 4rpx solid #ff6b09;
+  
+}
+
+.sumprice>view>view:nth-of-type(2){
+  width: 160rpx;
+  height: 60rpx;
+  padding-top: 30rpx;
+  text-align: center;
+  float: left;
+  
+}
+
+@font-face {
+  font-family: "My Font";
+  src: url("https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/font/HYQiHei_75S.ttf") format("woff2"),
+       
+     
+}

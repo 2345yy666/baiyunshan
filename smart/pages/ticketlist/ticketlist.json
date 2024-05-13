@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+
+    "search-bar": "antd-mini/es/SearchBar/index",
+    "demo-block": "../../components/DemoBlock/index",
+    "rate": "antd-mini/es/Rate/index"
+
+  },
+  "styleIsolation": "apply-shared",
+  "allowsBounceVertical": "NO"
+}

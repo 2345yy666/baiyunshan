@@ -1,0 +1,251 @@
+
+
+@font-face {
+  font-family: "My Font";
+  src: url("https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/font/HYQiHei_75S.ttf") format("woff2"),
+       
+     
+}
+page{
+
+  font-family: "My Font";
+
+}
+
+.swiper-container{
+  height: 560rpx;
+}
+
+
+.banneractive{
+  width: 650rpx;
+  height: 400rpx;
+  margin: 0rpx auto;
+}
+
+
+#chaozhi{
+  width: 650rpx;
+  margin: 0rpx auto;
+}
+
+.input{
+
+  width: 650rpx;
+  
+  border: 1px solid white;
+  border-radius: 35rpx;
+  margin: 10rpx auto;
+  display: flex;
+  position: relative;
+  bottom: 130rpx;
+}
+.input>view>image{
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  left: 10rpx;
+  top: 12rpx;
+
+}
+.input>input{
+  width: 550rpx;
+  height: 77rpx;
+  background-color: transparent;
+  
+  font-weight: bold;
+}
+
+.optionselect{
+
+  width: 670rpx;
+
+  overflow: hidden;
+
+  margin: 35rpx auto;
+
+}
+.optionone{
+  float: left;
+  width: 110rpx;
+  height: 130rpx;
+  margin: 15rpx 25rpx;
+  
+}
+.optionone>view{
+  margin: 0rpx auto;
+  width: 85rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.optionone>view>image{
+  width: 85rpx;
+  height: 80rpx;
+  border-radius: 50%;
+ 
+}
+.optionone>text{
+  font-size: 20rpx;
+  color: #5b6f7e;
+  font-family: "Arial";
+  padding-left: 18rpx;
+}
+.map{
+  width: 700rpx;
+  height: 430rpx;
+  margin: 20rpx auto;
+  border-radius: 30rpx;
+}
+
+.map>image{
+  width: 700rpx;
+  height: 400rpx;
+  border-radius: 30rpx;
+  
+}
+
+.notice{
+
+
+ 
+  height: 100%;
+  width: 700rpx;
+  margin: 60rpx auto;
+  overflow:hidden;
+}
+.notice>view:first-of-type{
+
+  font-weight: 600;
+  font-size: 34rpx;
+  width: 700rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+
+}
+.scenery{
+
+width: 700rpx;
+
+}
+
+.scenery>view{
+
+    float: left;
+    width: 350rpx;
+    height: 420rpx;
+   
+
+
+}
+.scenery>view>view:first-of-type{
+  width: 100rpx;
+  height: 40rpx;
+  position: relative;
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+  border-bottom-right-radius: 30rpx; /* 仅适用于右下角 */
+  border-top-left-radius: 10rpx;
+  top: 40rpx;
+ margin-top: -30rpx;
+ 
+
+}
+.scenery>view>view:first-of-type>text{
+ 
+  color: white  !important;
+  
+  line-height: 40rpx;
+  font-size: 22rpx;
+ 
+  font-weight: 500;
+}
+.scenery>view>view:nth-of-type(2){
+  width: 350rpx;
+  height: 340rpx;
+
+}
+.scenery>view>view:nth-of-type(2)>image{
+  
+  width: 350rpx;
+  height: 340rpx;
+  border-radius: 10rpx;
+
+}
+.scenery>view>view:nth-of-type(3){
+  width: 320rpx;
+ margin: 20rpx 0rpx;
+ font-weight: 400;
+ font-size: 26rpx;
+}
+
+
+
+
+
+
+
+
+.bulletin{
+
+  width: 700rpx;
+  height: 80rpx;
+  margin: 50rpx auto;
+  border: 1px solid rgb(169, 234, 234);
+  border-radius: 30rpx;
+  background-color: white;
+}
+.bulletin>view{
+  float: left;
+}
+.bulletin>view:first-of-type{
+  width: 120rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: rgb(243, 84, 21);
+  font-weight: bold;
+}
+.bulletin>view:nth-of-type(2){
+  width: 450rpx;
+  height: 60rpx;
+  margin-top: 6rpx;
+  
+}
+.bulletin>view:nth-of-type(3){
+
+  width: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  color:#cdc1ce ;
+}
+
+
+
+.bulletin input{
+
+      width: 400rpx;
+      height: 60rpx;
+     font-size: 22rpx;
+     color: rgb(97, 104, 105);
+     font-weight: bold;
+    
+}
+
+
+.bottom{
+
+  width:750rpx ;
+  height: 250rpx;
+  overflow:hidden;
+}
+.bottom>view{
+
+  width: 550rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+ color: #989898;
+  text-align: center;
+  font-size: 24rpx;
+}

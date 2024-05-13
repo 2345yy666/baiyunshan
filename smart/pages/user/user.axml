@@ -1,0 +1,121 @@
+
+
+
+<view>
+
+        <view class="top">
+          
+          <view>
+            个人中心
+          </view>
+
+        </view>
+        <view class="tourist">
+
+            <view>
+              
+               <view id="thetoux">
+                 <view>
+                   <image mode="scaleToFill" src="{{userimage}}" />
+                 </view>
+                 <view >
+                  <button style="border:none;font-size:32rpx" open-type="getAuthorize" onGetAuthorize="getUserInfo" 
+                  onError="onAuthError" scope='userInfo'>{{username}}</button>
+                 </view>
+               </view>
+                
+             
+            </view>
+
+            <view class="touitem">
+              <view>
+                  <view>
+                    0
+                  </view>
+                  <view>
+                    我的收藏
+                  </view>
+              </view>
+
+              <view>
+                <view>
+                  0
+                </view>
+                <view>
+                  我的评论
+                </view>
+            </view>
+
+            <view>
+              <view>
+                0
+              </view>
+              <view>
+                我的发布
+              </view>
+          </view>
+
+          <view>
+            <view>
+              0
+            </view>
+            <view>
+              优惠卷
+            </view>
+        </view>
+             
+            </view>
+
+        </view>
+
+        <view class="myorder">
+          <view>我的订单</view>
+          <view class="orderlist">
+            <view>
+              
+              <view>
+                <image mode="scaleToFill" src="https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/image/icon/待支付.png" />
+              </view>
+              <view>
+                待支付
+              </view>
+            </view>
+              
+            <view>
+              
+              <view>
+                <image mode="scaleToFill" src="https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/image/icon/待使用.png" />
+              </view>
+              <view>
+                待使用
+              </view>
+            </view>
+
+            <view>
+              
+              <view>
+                <image mode="scaleToFill" src="https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/image/icon/已完成.png" />
+              </view>
+              <view>
+                已完成
+              </view>
+            </view>
+
+            <view>
+              
+              <view>
+                <image mode="scaleToFill" src="https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/image/icon/已退订单.png" />
+              </view>
+              <view>
+                已退订
+              </view>
+            </view>
+
+
+          </view>
+        </view>
+
+
+
+
+</view>

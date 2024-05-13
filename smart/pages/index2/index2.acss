@@ -1,0 +1,81 @@
+page{
+  background-color: #f5f5f5;
+}
+
+#fuwu{
+
+  width: 540rpx;
+  height:50rpx ;
+  padding-top: 30rpx;
+  margin-left: 40rpx;
+  font-weight: bold;
+  font-size: 40rpx;
+  letter-spacing:-0.2mm;
+}
+.fuwulist{
+  width: 710rpx;
+  margin: 30rpx auto;
+  height: 700rpx;
+} 
+
+.fuwulist>view{ 
+  width: 700rpx;
+  height: 200rpx;
+ margin-top: 20rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.03); /* 生成一个模糊半径为10px的阴影，颜色为黑色，不偏移 */
+}
+
+.jutifuwu>view:first-of-type{
+
+  width: 160rpx;
+  height: 130rpx;
+  padding-left:50rpx ;
+  padding-top: 40rpx;
+  float: left;
+}
+
+.jutifuwu>view:first-of-type>image{
+  width: 130rpx;
+  height: 120rpx;
+}
+
+
+.jutifuwu>view:nth-of-type(2){
+  float: left;
+  width: 450rpx;
+  height: 120rpx;
+  padding-left: 10rpx;
+  padding-top: 55rpx;
+
+}
+.jutifuwu>view:nth-of-type(2)>view{
+  float: left;
+  width: 420rpx;
+  margin: -6rpx 0rpx;
+}
+
+.jutifuwu>view:nth-of-type(2)>view:nth-of-type(1){
+  font-weight: bold;
+  
+}
+
+.jutifuwu>view:nth-of-type(2)>view:nth-of-type(2){
+  float: right;
+  width: 40rpx;
+  color: #9d9d9d;
+  font-size: 40rpx;
+}
+
+.jutifuwu>view:nth-of-type(2)>view:nth-of-type(3){
+ font-weight: 500;
+ color: #837c82;
+ font-size: 28rpx;
+}
+
+.right>image{
+
+  width: 40rpx;
+  height: 28rpx;
+}

@@ -1,0 +1,11 @@
+{
+  "defaultTitle": "Popup",
+  "usingComponents": {
+    "popup": "antd-mini/es/Popup/index",
+    "demo-block": "../../components/DemoBlock/index",
+    "button": "antd-mini/es/Button/index",
+    "list": "antd-mini/es/List/index",
+    "list-item": "antd-mini/es/List/ListItem/index",
+    "switch": "antd-mini/es/Switch/index"
+  }
+}

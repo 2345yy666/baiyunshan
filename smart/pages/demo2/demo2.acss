@@ -1,0 +1,21 @@
+.swiper-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px; /* 设置轮播图容器的高度 */
+}
+
+.item-container {
+  flex: 1;
+  text-align: center;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  height: auto;
+}
+
+.main {
+  transform: scaleY(1.1); /* 中间图片高度增加 1.1 倍 */
+}

@@ -1,0 +1,54 @@
+<!-- 在小程序页面中直接引入 CDN 上的 JavaScript 库 -->
+<view class="page">
+  <view class="page-section">
+    <view>请不要一进入小程序就弹框授权，建议先了解小程序的服务内容</view>
+    <button type="primary" onTap="getAuthCode">
+      获取授权码
+    </button>
+
+    
+
+    <button style="margin-top:20px" type="primary" open-type="getAuthorize" onGetAuthorize="getUserInfo" 
+  onError="onAuthError" scope='userInfo'>会员基础信息授权</button>
+
+
+    <button open-type="getAuthorize" scope="userInfo"  style="margin-top:20rpx" type="primary" onTap="getrequest">
+      测试Request方法
+    </button>
+
+    <button style="margin-top:10px" type="primary" onTap="getrequestdemo">
+      获取授权码
+    </button>
+
+
+    <button style="margin-top:10px" type="primary" onTap="ddmf">
+      当面付
+    </button>
+
+
+    <button style="margin-top:10px" type="primary" onTap="appzhifu">
+      当面付
+    </button>
+
+
+    <view class="container">
+      <image src="{{ imgSrc }}" mode="aspectFit"></image>
+    </view>
+    <view style="margin:0rpx auto;width:540rpx" class="container">
+      <image style="width:520rpx;height:200rpx" mode="scaleToFill" src="{{image}}" />
+      <view class="txmcontent">
+        12312312
+      </view>
+     </view>
+
+
+    <button style="margin-top:10px" type="primary" onTap="getjsqpi">
+      jsqpi支付
+    </button>
+    
+
+
+   
+
+  </view>
+</view>

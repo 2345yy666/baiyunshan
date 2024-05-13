@@ -1,0 +1,69 @@
+{
+  "pages": [
+   
+    "pages/index/index",
+    "pages/paysucess/paysucess",
+    
+    "pages/popup/popup",
+    
+    "pages/demo333/demo333",
+    "pages/orderconfirm/orderconfirm",
+ 
+    "pages/demo033/demo033",
+    
+    "pages/confirm/confirm",
+    "pages/index2/index2",
+    "pages/ticketlist/ticketlist",
+    "pages/reserve/reserve",
+    "pages/order/order",
+    "pages/user/user",
+    "pages/demo2/demo2",
+    "pages/orderconfirmsucess/orderconfirmsucess",
+    "pages/orderconfirmtuiding/orderconfirmtuiding"
+    
+  ],
+  "window": {
+    "transparentTitle": "none",
+    "titlePenetrate": "NO"
+  },
+  "behavior": {
+    "requestReferrerStrategy": "page",
+    "requestReferrerStyle": "full",
+    "requestDefaultEnableCookie": true,
+    "connectSocketDefaultMultiple": true
+  },
+  "tabBar": {
+    "customize": true,
+    "overlay": true,
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "Tab 0"
+      },
+      {
+        "pagePath": "pages/index2/index2",
+        "name": "Tab 1"
+      },
+      {
+        "pagePath": "pages/ticketlist/ticketlist",
+        "name": "Tab 2"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "name": "Tab 3"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "name": "Tab 4"
+      }
+    ],
+    "style": {
+      "fontFace": [
+        {
+          "fontFamily": "yyziti",
+          "src": "url('fonts/HYQiHei_75S.ttf')"
+        }
+      ]
+    }
+  }
+}

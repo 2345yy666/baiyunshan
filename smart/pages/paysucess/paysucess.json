@@ -1,0 +1,18 @@
+{
+  "usingComponents": {
+
+    "popup": "antd-mini/es/Popup/index",
+    "demo-block": "../../components/DemoBlock/index",
+
+    "list": "antd-mini/es/List/index",
+    "list-item": "antd-mini/es/List/ListItem/index",
+    "switch": "antd-mini/es/Switch/index"
+
+
+  },
+  "styleIsolation": "apply-shared",
+
+  "transparentTitle": "always",
+
+  "titlePenetrate": "YES"
+}

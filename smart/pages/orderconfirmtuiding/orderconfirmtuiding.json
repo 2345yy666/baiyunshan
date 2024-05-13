@@ -1,0 +1,11 @@
+{
+
+  
+  "usingComponents": {},
+  "styleIsolation": "apply-shared",
+
+
+  "transparentTitle": "always",
+
+  "titlePenetrate": "YES"
+}

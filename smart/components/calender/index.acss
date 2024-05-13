@@ -1,0 +1,266 @@
+.slide-up-dialog {
+  width: 100%;
+  visibility: hidden;
+  position: relative;
+  z-index: 9999;
+}
+
+.slide-up-dialog.active {
+  visibility: visible;
+}
+
+.slide-up-back {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8888;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.slide-up-back.active {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.slide-up-container {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  border-radius: 32rpx 32rpx 0 0;
+  transform: translateY(100%);
+  transition: all 0.3s;
+}
+
+.slide-up-container.active {
+  transform: translateY(0%);
+  transition: all 0.3s;
+}
+
+.slide-up-container.change {
+  padding-bottom: calc(env(safe-area-inset-bottom) + 32rpx);
+}
+
+.close {
+  width: 30rpx;
+  height: 30rpx;
+  overflow: hidden;
+  position: absolute;
+  right: 32rpx;
+  top: 32rpx;
+  z-index: 100;
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+.close::before {
+  transform: rotate(45deg);
+}
+
+.close::before,
+.close::after {
+  content: '';
+  position: absolute;
+  height: 3rpx;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -2rpx;
+  background: #9c9c9c;
+}
+
+.calendar {
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 32rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.month-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  color: #eeeeee;
+  font-size: 350rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  font-family: serif;
+}
+
+.calendar-title {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #172238;
+  padding: 0 32rpx;
+}
+
+.calendar .month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar .month .title {
+  font-size: 32rpx;
+  font-weight: 500;
+  line-height: 48rpx;
+  color: #262626;
+}
+
+.calendar .month .icon_arrows .icon_arrows_left {
+  margin-right: 62rpx;
+}
+
+.calendar .month .icon_arrows .icon_arrows_right {
+  transform: rotate(180deg);
+}
+
+.calendar .week_list {
+  padding-bottom: 16rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.calendar .week_list text {
+  width: 98rpx;
+}
+
+.calendar .week_list text:last-child {
+  width: auto;
+}
+
+.calendar .day_list {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.calendar .day_list text {
+  width: 98rpx;
+  flex-shrink: 0;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.calendar .day_list .date_item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* .calendar .day_list .date_item:nth-child(7n) {
+  color: #cecece;
+}
+
+.calendar .day_list .date_item:nth-child(7n+1) {
+  color: #cecece;
+} */
+
+.calendar .day_list .selectDate_item {
+  z-index: 2;
+  color: #fff !important;
+}
+
+.calendar .day_list .selectDate_item .selectDate {
+  width: 80rpx;
+  height: 80rpx;
+  background: #1ecdb9;
+  position: absolute;
+  border-radius: 100%;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.calendar .day_list .selectDate_item .circular_normal {
+  background: #fff;
+}
+
+.calendar .day_list .circular {
+  width: 8rpx;
+  height: 8rpx;
+  background: #ff4400;
+  border-radius: 8rpx;
+  display: block;
+  position: absolute;
+  bottom: 10rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.calendar .day_list .circular_normal {
+  background: #1ecdb9;
+}
+
+.calendar .day_list .circular_white {
+  background: #fff;
+}
+
+.calendar .day_list .selectDateBg {
+  background-color: #f0f9f8;
+}
+
+.mt-32 {
+  margin-top: 32rpx;
+}
+
+.c-9f9f9f {
+  color: #9f9f9f;
+}
+
+.c-6b6b6b {
+  color: #6b6b6b;
+}
+
+.c-cecece {
+  color: #cecece;
+}
+
+.icon_arrows_tip {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.foot-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+  margin-top: 32rpx;
+}
+
+.confirm-button {
+  width: 686rpx;
+  height: 84rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 16rpx;
+  background: #1ecdb9;
+}

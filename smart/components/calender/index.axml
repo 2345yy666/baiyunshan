@@ -1,0 +1,29 @@
+<view class="slide-up-dialog {{visible ? 'active' : ''}}">
+  <view class="slide-up-back {{visible ? 'active' : ''}}" onTap="handleClose" data-ptpid="0635-182c-974a-136d"></view>
+  <view class="slide-up-container {{visible ? 'active' : ''}} {{isTabbar ? 'change' : ''}}" style="background: {{bgColor}}">
+    <view class="close" onTap="handleClose" data-ptpid="6a33-1261-94b7-acad"></view>
+    <view class="calendar-title">请选择预约日期</view>
+    <view class="calendar custom-class">
+      <view class="month-mask">{{showMonth}}</view>
+      <view class="month">
+        <text class="title">{{showYear}}年 {{showMonth}}月</text>
+        <view class="icon_arrows disflex">
+          <image src="https://qiniu-image.qtshe.com/icon_arrows_left.png" onTap="getLastMonth" class="icon_arrows_left icon_arrows_tip" data-ptpid="58e6-12cd-9d25-a322" />
+          <image src="https://qiniu-image.qtshe.com/icon_arrows_left.png" onTap="getNextMonth" class="icon_arrows_right icon_arrows_tip" data-ptpid="1645-1903-a7c9-b160" />
+        </view>
+      </view>
+      <view class="mt-32 week_list">
+        <text a:for="{{['日', '一', '二', '三', '四', '五', '六']}}" a:key="index" class="c-9f9f9f">{{item}}</text>
+      </view>
+      <view class="day_list">
+        <text a:for="{{dateList}}" a:key="index" class="date_item {{(item.timestamp === endTimestamp || item.timestamp === startTimestamp)?'selectDate_item':''}} {{(item.timestamp <= endTimestamp && item.timestamp >= startTimestamp) ? 'selectDateBg' : ''}} {{((item.timestamp < showTimestamp) || (item.timestamp > showTimestamp + (limitTime * 86400000))) ? 'c-cecece' : ''}} c-6b6b6b" onTap="{{((item.timestamp < showTimestamp) || (item.timestamp > showTimestamp + 7776000000)) ? '' : 'selectDate'}}" data-date="{{item.label}}" data-index="{{index}}" data-ptpid="b245-1912-8942-e7e8">
+          <text class="selectDate" a:if="{{item.timestamp === endTimestamp || item.timestamp === startTimestamp}}"></text>{{item.label}}
+          <text class="circular {{item.status === '0' ? 'circular_normal':''}}" a:if="{{item.status}}"></text>
+        </text>
+      </view>
+    </view>
+    <view class="foot-btns">
+      <view class="confirm-button" onTap="handleConfirm" data-ptpid="eefc-10f3-904c-edf2">确定</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,122 @@
+
+
+
+<view style="overflow:hidden">
+  
+  
+  <!-- 展示banner图 -->
+  <view class="swiper-container">
+    <swiper class="swiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block a:for="{{images}}" a:for-item="item" a:for-index="index">
+        <swiper-item key="{{index}}">
+          <image style="width:800rpx;height:550rpx;" class="slide-image" src="{{item}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+    
+    
+  </view>
+
+  <view  id="detail">
+    
+    <view class="title">
+        <view>
+          <text>白云山景区</text>
+          <text>5.0分</text>
+        </view>
+        <view class="rate">
+          <view class="fengjing">
+            <view>
+              自然风光
+            </view>
+            <view>
+              人文景区
+            </view>
+          </view>
+          <view>
+              <rate className="rate" value="{{5}}" allowHalf="{{true}}" allowClear="{{true}}" activeColor="#FF8F1F" image="https://gw.alipayobjects.com/zos/bmw-prod/5f711210-a360-4214-8860-391671acc5cd.svg"/>
+          </view>
+        </view>
+        <view class="line">
+          
+        </view>
+        <view id="address">
+          广东省广州市白云区，为南粤名山
+        </view>
+
+    </view>
+
+   
+
+  </view>
+  <view id="reserve">
+    <tabs index="{{index}}"  onChange="handleChange" sticky animation swipeable activeColor="#ff0000" inactiveColor="#000000">
+      <tab-content tab="{{title:'产品预订'}}" >
+      
+        <view class="infor" a:for="{{reserveinfo}}" a:key="index">
+          <view>{{item.tname}}</view>
+          <view class="tixi">{{item.context}}</view>
+          <view class="price" style="float:right">
+            <view>
+              <text style="font-size:24rpx">￥</text>
+              <text style="font-size:50rpx">{{item.price}}</text>
+              <text style="color:gray;font-size:24rpx">起</text>
+            </view>
+            <view >
+             
+
+
+              <button data-index="{{item.tid}}" class="btn1" onTap="yuding">预订</button>
+
+
+
+
+
+            </view>
+          </view>
+          <view class="knowyuding">
+            <view style="font-size:24rpx;color:#9a9a9a">
+              可随时退订
+            </view>
+            <view style="font-size:28rpx">
+              预订须知  &gt
+            </view>
+          </view>
+        </view>
+        
+        
+        
+
+      </tab-content>
+      <tab-content tab="{{title:'简介通知'}}">
+        <view class="content-title">
+          白云山景区
+        </view>
+        <view style="font-weight:300;font-size:24rpx"  class="content-text">
+          <view style="margin-left:80rpx;">
+            <text>白云山（Baiyun Mountain）：国家AAAAA级旅游景区白云</text>
+          </view>
+              <text >山，位于广东省广州市白云区。为南粤名山之一，
+                自古就有“羊城第一秀”之称。山体相当宽阔，由30多座山峰组成，为广东最高峰九连山的支脉。面积20.98平方公里，主峰摩星岭高382米。白云山景色秀丽，自古以来就是广州有名的风景胜地。如“蒲涧濂泉”、“白云晚望”、“景泰僧归”等，均被列入古代“羊城八景”。20世纪60年代和80年代，白云山分别以“白云松涛”和“云山锦秀”胜景两度被评为“羊城新八景”之一。改革开放以后，党和国家多位领导人及国际友人也都曾在此观光并题名，为白云山风景区留下了不少墨宝。
+                白云山位于广州市的东北部，地理位置为东经113°17′，北纬23°11′。地形略呈斜长方形，呈东北西南走向，东西宽约4公里，南北长约7公里。山体相当宽阔，由30多座山峰组成，为广东最高峰九连山的支脉。全境面积为28平方公里，其中属特别保护范围的面积为20．98平方公里。《国家级风景名胜区——广州市白云山风景名胜区总体规划（2009-2025）》中，白云山风景名胜区规划麓湖、飞鹅岭、三台岭、鸣春谷、柯子岭、摩星岭、明珠楼及荷依岭等八个景区。
+                白云山是一个和缓起伏的山块，山块大致作东北西南走向。从高空俯瞰，白云山有点像一个“扁豆荚”，南北长7000多米，中部东西宽4000多米，共有30多个山峰。它的东南和西北坡是一条直线般的长条急坡，这是因为山坡是沿着广从断裂与广州-罗浮山断裂夹角地带的断裂线形成的。也就是说，
+                白云山是断层上升形成的山块：两面下陷，山体上升。白云山已建设成为的国家级风景名胜区和旅游景区。白云山风景区从南至北共有7个游览区，依次是：麓湖景区、三台岭景区、鸣春谷景区、摩星岭景区、明珠楼景区、飞鹅岭景区及荷依岭景区，区内有三个全国之最的景点，分别是：全国最大的园林式花园——云台花园；全国最大的天然式鸟笼——鸣春谷；全国最大的主题式雕塑专类公园——雕塑公园。白云山已建设成为的国家级风景名胜区和旅游景区。白云山风景区从南至北共有7个游览区，依次是：麓湖景区、三台岭景区、鸣春谷景区、摩星岭景区、明珠楼景区、飞鹅岭景区及荷依岭景区，区内有三个全国之最的景点，分别是：全国最大的园林式花园——云台花园；全国最大的天然式鸟笼——鸣春谷；全国最大的主题式雕塑专类公园——雕塑公园。
+              </text>
+            
+        </view>
+      </tab-content>
+
+
+      <tab-content tab="{{title:'游客点评'}}">
+       <view class="review">
+         暂无数据~
+       </view>
+      </tab-content>
+     
+    </tabs>
+  </view>
+
+
+
+</view>

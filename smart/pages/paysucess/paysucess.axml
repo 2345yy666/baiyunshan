@@ -1,0 +1,308 @@
+<view style="height:{{statusBarHeight}}px;z-index:100;  width:750rpx; text-align: center;justify-content:center; display: flex; align-items: center;position:fixed"></view> 
+<view style="   height:{{titleBarHeight}}px;z-index:100;color:white; width:750rpx; ext-align: center;justify-content:left; display: flex; align-items: center; top:{{statusBarHeight}}; position:fixed" onTap="test">
+  
+    <view  style="padding-left:80rpx;font-size:28rpx">
+      
+    </view>
+  
+</view>
+<view style="height:100%;overflow:hidden">
+
+
+
+<view>
+  
+
+
+    <view class="content">
+        <view id="top">
+          
+        </view>
+
+        <view class="yfk">
+            <view>
+              <view>
+                <image mode="scaleToFill" src="https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/image/icon/ticket.png" />
+
+              </view>
+            </view>
+            <view>
+                <view style="color:white">
+                  已付款
+                </view>
+                <view style="color:#fed1aa;font-size:27rpx;padding-top:15rpx">
+                  出票成功,请在有效期内使用
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="ticketcontent">
+        <view>
+          广州白云山-【{{orderinfooneotim[0].tk.tname}}】门票+索道+云梯
+        </view>
+
+        <view class="thedate">
+          <view>
+            <text style="color:#6b6b6b">有效期</text> <text style="float:right;color:#fc4448;font-size:30rpx">2024-04-01至2024-05-31</text>
+          </view>
+          <view>
+            <text style="color:#6b6b6b">使用时间</text> <text style="float:right">9:00-18:30</text>
+          </view>
+        </view>
+
+
+        <view class="map">
+            <view>
+              广州白云山-【{{orderinfooneotim[0].tk.tname}}】门票+索道+云梯
+            </view>
+
+            <view>
+                <view id="dache">
+                  <image mode="scaleToFill" src="https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/image/thecar.png" />
+                </view>
+                <view style="font-size:28rpx;padding-left:5rpx">
+                  打车
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+    <view id="youwaninfo">
+        <view>
+          游玩人信息
+        </view>
+
+        <view>
+          <view style="padding-top:30rpx;font-size:28rpx">
+            秦浩琳
+          </view>
+          <view style="font-size:28rpx;color:#6b6360">
+            身份证：...
+          </view>
+        </view>
+    </view>
+
+    <view id="qrcode">
+        <view class="tishi">
+          由【支付宝】提供出票，同时携带「入园码」「身份证」先换票再使用或凭手机出票短信使用【换票地址:洛阳红山欢乐谷欢乐牧场售票处】
+        </view>
+
+        <view id="theqrcode">
+            <view class="imgaquade">
+              <image src="{{ imgtxm }}" mode="aspectFit"></image>
+            </view>
+        </view>
+
+        
+    </view>
+
+    <view id="ruleandprice">
+      <view style="padding-top:30rpx;font-size:34rpx;height:66rpx">
+        费用包含
+      </view>
+      <view style="height:96rpx;color:#686868">
+          <view style="width:170rpx;height:75rpx;">
+            费用说明
+          </view>
+          <view style="font-size:28rpx;width:235px">
+            广州白云山-【{{orderinfooneotim[0].tk.tname}}】门票+索道+云梯
+          </view>
+      </view>
+      <view style="color:#686868;height:86rpx;border-bottom:4rpx solid #f2f2f2">
+        <text>详细说明</text>
+        <text style="padding-left:50rpx">门票+索道+云梯</text>
+        
+      </view>
+
+
+
+      <view id="theruler" style="margin-top: 30rpx;font-size:34rpx">
+          退改规则
+      </view>
+      <view id="suishitui" style="margin-top:20rpx">
+        <view id="tui">
+          随时退
+        </view>
+      </view>
+
+      <view style="color:#676767">
+        出票失败全额退款，出票成功未使用可随时申请全额退款，一笔订单多张票不支持部分退款，下单后不支持改期。
+      </view>
+
+
+
+    </view> 
+
+
+
+      <view class="orderinfo">
+        
+          <view style="padding-top:40rpx">
+              <view style="color:#606060">
+                订单号
+              </view>
+            
+              <view style="float:right">
+                {{oid}}
+              </view>
+          </view>
+
+          <view>
+            <view style="color:#606060">
+              下单时间
+            </view>
+          
+            <view style="float:right">
+              {{orderinfooneotim[0].apply_time}}
+            </view>
+          </view>
+
+
+          <view>
+            <view style="color:#606060">
+              购买票数
+            </view>
+          
+            <view style="float:right">
+              1张
+            </view>
+          </view>
+
+
+          <view>
+            <view style="color:#606060">
+              总价
+            </view>
+          
+            <view style="float:right">
+              ¥{{orderinfooneotim[0].tk_orderitemprice}}
+            </view>
+          </view>
+
+
+
+
+
+          
+      </view>
+
+
+
+      <view id="pay">
+          <view>
+            <view   style="background-color:#ff461f;color:#fff6f6;border: 2rpx solid #ff461f;">
+              重新购买
+            </view>
+            <view>
+              联系客服
+            </view>
+            <view >
+              <button class="dibu"  data-position="bottom" onTap="handleShowBasic">申请退款</button>
+            </view>
+
+          </view>
+      </view>
+
+
+      <popup visible="{{basicShow}}"    autoHeight="{{autoHeight}}" maskClosable="{{maskClosable}}" position="{{position}}" animation="{{animation}}" onClose="handlePopupClose" 
+    showCloseIcon="{{showCloseIcon}}">
+    <view id="proup">
+        <view style="font-size:38rpx">
+          申请退款
+        </view>
+        <view style="font-size:36rpx">
+          广州白云山-【成人】门票+索道+云梯
+        </view>
+
+        <view style="height:270rpx;border-bottom:2rpx solid #e6e6e6 ">
+          
+          <view>
+            退改规则
+          </view>
+          <view style="margin-top:20rpx">
+              <view id="suishit" style="font-size:28rpx" >随时退</view>
+          </view>
+          <view style="color: ##9e9e9e;">
+            出票失败全额退款，出票成功未使用可随时申请全额退款，一笔订单多张票不支持部分退款，下单后不支持改期。
+          </view>
+
+        </view>
+
+
+        <view style="height:390rpx" class="orderinfo">
+        
+
+          <view style="width:690rpx">
+            <view style="color:#606060">
+              退款票数
+            </view>
+          
+            <view style="float:right">
+              1张
+            </view>
+          </view>
+          <view style="width:690rpx">
+            <view style="color:#606060">
+              订单金额
+            </view>
+          
+            <view style="float:right;color:#ef4521">
+              ¥{{orderinfooneotim[0].tk_orderitemprice}}.00
+            </view>
+          </view>
+
+          <view style="width:690rpx">
+            <view style="color:#606060">
+              手续费
+            </view>
+          
+            <view style="float:right">
+              ¥0.00
+            </view>
+          </view>
+
+          <view style="width:690rpx">
+            <view style="color:#606060">
+              可退金额
+            </view>
+          
+            <view style="float:right;">
+              ¥{{orderinfooneotim[0].tk_orderitemprice}}.00
+            </view>
+          </view>
+
+          <view style="width:690rpx">
+            <view style="color:#606060">
+              原来退回
+            </view>
+          
+            <view style="float:right;">
+             <text style="color:#737373;font-size:28rpx;padding-right:10rpx">(预计1个工作日退款到账) </text> 原路退回
+            </view>
+          </view>
+
+
+        
+
+          
+      </view>
+
+      <view class="flex justify-between items-center container">
+        <view>
+            <view  class="price">¥{{orderinfooneotim[0].tk_orderitemprice}}.00</view>
+            <view style="margin-left:10rpx" class="return">预计返款</view>
+        </view>
+        <button onTap="refund" class="submit">提交申请</button>
+    </view>
+    
+
+
+
+    </view>
+  </popup>
+ 
+
+
+</view>

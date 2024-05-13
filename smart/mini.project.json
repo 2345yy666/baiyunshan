@@ -1,0 +1,6 @@
+{
+  "format": 2,
+  "developOptions": {
+    "skipTranspile": true
+  }
+}

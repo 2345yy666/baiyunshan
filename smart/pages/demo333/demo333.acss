@@ -1,0 +1,10 @@
+
+
+
+
+.txmcontent{
+  width: 200rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+
+}

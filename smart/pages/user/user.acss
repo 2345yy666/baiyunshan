@@ -1,0 +1,166 @@
+
+
+page{
+  background: #f5f5f7;
+}
+
+
+.top{
+
+  width:750rpx ;
+  height:170rpx ;
+}
+.top>view{
+
+  width: 650rpx;
+  height: 70rpx;
+ padding-top:30rpx;
+margin: 0rpx auto;
+  font-weight: bold;
+}
+
+.tourist{
+
+
+  width:690rpx ;
+  height:300rpx ;
+  background-color: white;
+  margin: 0rpx auto;
+  border-radius: 20rpx;
+
+}
+
+
+
+.touitem{
+  width:690rpx ;
+  height: 100rpx;
+  margin: 10rpx auto;
+  padding-top: 25rpx;
+}
+.touitem>view{
+  width: 140rpx;
+  height: 140rpx;
+  float: left;
+  margin-top: 15rpx;
+  margin: 0rpx 16rpx;
+}
+.touitem>view>view:first-of-type{
+  font-weight: bold;
+  font-size: 34rpx;
+  margin-bottom: 20rpx;
+}
+.touitem>view>view:nth-of-type(2){
+  font-size: 26rpx;
+}
+.touitem>view>view{
+  width: 130rpx;
+  height: 40rpx;
+  text-align: center;
+
+}
+
+.myorder{
+  width:690rpx ;
+  height:250rpx ;
+  background-color: white;
+  margin: 30rpx auto;
+  border-radius: 20rpx;
+
+
+}
+.myorder>view:first-of-type{
+  width:630rpx ;
+  height:50rpx ;
+  margin: 0rpx auto;
+  padding-top: 20rpx; 
+  font-weight: 600;
+}
+
+.orderlist{
+  width:690rpx ;
+  height: 140rpx;
+  margin-top: 30rpx;
+}
+.orderlist>view{
+  width: 140rpx;
+  height: 140rpx;
+  float: left;
+  margin-top: 15rpx;
+  margin: 0rpx 16rpx;
+}
+.orderlist>view>view:nth-of-type(2){
+  text-align: center;
+}
+.orderlist>view>view:first-of-type{
+  align-items: center;
+  margin: 0rpx auto;
+  width: 60rpx;
+}
+.orderlist>view image{
+    width: 60rpx;
+    height: 50rpx;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.demo-list {
+  display: flex;
+  align-items: flex-start;
+}
+.list-item {
+  margin-right: 24rpx;
+  text-align: left;
+}
+
+.list-item .size-text {
+  padding-top: 12rpx;
+}
+:global(.amd-avatar-src-medium)
+{
+  border-radius: 50%;
+}
+#thetoux{
+
+  width: 630rpx;
+  height: 90rpx;
+  margin: 0rpx auto;
+  padding-top: 40rpx;
+}
+#thetoux>view{
+  float: left;
+}
+#thetoux>view:first-of-type{
+
+  width: 100rpx;
+  height: 90rpx;
+  border-radius: 50%;
+
+}
+#thetoux>view>image{
+
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+
+}
+#thetoux>view:nth-of-type(2){
+
+  height: 90rpx;
+  line-height: 90rpx;
+  margin-left: 15rpx;
+
+}

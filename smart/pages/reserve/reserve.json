@@ -1,0 +1,15 @@
+{
+
+  "defaultTitle": "景区门票",
+  "usingComponents": {
+
+    "tabs": "antd-mini/es/Tabs/index",
+    "tab-content": "antd-mini/es/Tabs/TabItem/index",
+    "icon": "antd-mini/es/Icon/index",
+    "rate": "antd-mini/es/Rate/index",
+    "demo-block": "../../components/DemoBlock/index"
+   
+  },
+  "styleIsolation": "apply-shared",
+  "allowsBounceVertical": "NO"
+}

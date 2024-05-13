@@ -1,0 +1,119 @@
+
+
+<view style="height:{{statusBarHeight}}px;z-index:100;  width:750rpx; background-color:white; text-align: center;justify-content:center; display: flex; align-items: center;position:fixed"></view> 
+<view style="height:{{titleBarHeight}}px;z-index:100; width:750rpx;background-color:white; ext-align: center;justify-content:center; display: flex; align-items: center; top:{{statusBarHeight}}; position:fixed" onTap="test">
+  首页</view>
+<view style="height:100%;overflow:hidden">
+
+  <!-- 展示banner图 -->
+  <view class="swiper-container">
+    <swiper class="swiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block a:for="{{images}}" a:for-item="item" a:for-index="index">
+        <swiper-item key="{{index}}">
+          <image style="width:800rpx;height:550rpx;" class="slide-image" src="{{item}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class="input">
+      <view>
+        <image mode="scaleToFill" src="../../images/搜索.png" />
+      </view>
+      
+      <input type="text" class="search-input"  bind:tap="bindQueryChange"  placeholder="搜索吃、住、行" bindconfirm="bindSearchConfirm"/>
+     </view>
+    
+  </view>
+  
+
+  <!-- 游客点击类型 -->
+  <view>
+
+    <view class="optionselect">
+      
+      <view a:for="{{array}}" a:key="index" class="optionone">
+        <view>
+          <image mode="scaleToFill" src="{{item.imageSrc}}" />
+        </view>
+        <text>{{item.text}}</text>
+      </view>
+
+
+    </view>
+
+
+  </view>
+
+  <view class="map">
+      <image mode="scaleToFill" src="https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/image/map2.png" />
+  </view>
+
+
+
+  <view class="bulletin">
+    <view>
+      公告 ·
+    </view>
+    <view>  
+    <input value="云台山风景近日免费对内省人开放并..." type="text" />
+    </view>
+    <view>
+      <text>更多 &gt</text>
+    </view>
+
+  </view>
+
+  <view class="notice">
+    
+    <view>
+      热门景区
+    </view>
+
+    <view class="scenery">
+      
+        <view onTap="tosceney"  a:for="{{scency}}" a:key="index" class="jingquall">
+          <view>
+            
+            <text>景区</text>
+          </view>
+          <view>
+            <image mode="scaleToFill" src="{{item.image}}" />
+          </view> 
+          <view>
+            <text>{{item.text}}</text>
+          </view>
+          
+        </view>
+
+        
+       
+
+
+    </view>
+
+  </view>
+
+
+
+  <view class="bottom">
+    
+    <view>
+      -华景乐游提供技术支持-
+    </view>
+
+  </view>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</view>

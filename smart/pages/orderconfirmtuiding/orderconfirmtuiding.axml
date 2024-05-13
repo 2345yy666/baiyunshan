@@ -1,0 +1,228 @@
+
+
+<view style="height:{{statusBarHeight}}px;z-index:100;  width:750rpx; text-align: center;justify-content:center; display: flex; align-items: center;position:fixed"></view> 
+<view style="height:{{titleBarHeight}}px;z-index:100;color:white; width:750rpx; ext-align: center;justify-content:center; display: flex; align-items: center; top:{{statusBarHeight}}; position:fixed" onTap="test">
+  确认订单退订</view>
+<view style="height:100%;overflow:hidden">
+
+  <view>
+
+
+      <view class="content">
+        <view class="confirmmain">
+          
+
+
+        </view>
+
+        <view class="querdd">
+              <view class="dfkinfo">
+                  <view>
+                    已退订
+                  </view>
+                  <view>
+                   该订单已完成退订，订单可自行取消
+                  </view>
+                  <view>
+                    如果已经支付,请<text style="color:#6f69cc">点击此处刷新</text>
+                  </view>
+              </view>
+
+
+              <view class="next">
+
+                  <view>
+                    <view>
+                      <image mode="scaleToFill" src="https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/image/last.png" />
+                      <text>上一笔</text>
+                    </view>
+                  </view>
+                    <view>
+                      <view style="padding-left:15rpx">
+                        <text>下一笔</text>
+                        <image mode="scaleToFill" src="https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/image/next.png" />
+                        
+                      </view>
+                    </view>
+
+                   
+
+              </view>
+
+
+              <view class="ordernum">
+                  <text style="font-weight:bold;font-size:34rpx">订单编号</text><text style="padding-left:5rpx;font-siz:34rpx">{{orderinfoone.oid}}</text>
+              </view>
+
+              <view id="line">
+                
+              </view>
+
+
+              <!-- 门票信息 -->
+
+              <view class="tickcontent">
+
+
+                <view style="color:black;font-weight:bold">
+                  门票信息  
+                </view>
+                <view style="color:black;font-weight:bold;padding-top:20rpx">
+                  广州白云山门({{orderinfooneotim[0].tk.tname}})
+                </view>
+
+                <view class="thetickinfo">
+                    <view>
+                        <view>
+                          使用日期
+                        </view>
+                        <view>
+                          2024-04-24
+                        </view>
+                    </view>
+
+
+                    <view>
+                      <view>
+                        购买数量
+                      </view>
+                      <view>
+                        {{orderinfoone.num}}
+                      </view>
+                  </view>
+
+                  <view>
+                    <view>
+                      使用方法
+                    </view>
+                    <view>
+                      费用包含单人白云山景区门票+景交车票，凭身份证或订单二维码检票入园
+                    </view>
+                </view>
+
+
+                <view>
+                  <view>
+                    费用包含
+                  </view>
+                  <view>
+                    费用包含单人白云山景区门票+景交车票
+                  </view>
+              </view>
+
+
+              <view>
+                <view>
+                  入园时间
+                </view>
+                <view>
+                  {{orderinfooneotim[0].tk.available_time}}
+                </view>
+            </view>
+
+            <view>
+              <view>
+                有效期
+              </view>
+              <view>
+                游玩日起3天内单次有效使用
+              </view>
+          </view>
+          
+
+          <view>
+            <view>
+              退票规则
+            </view>
+            <view>
+              1、订单支付成功，未使用可直接申请退票。2、支持提前退和过期未使用退票，有效期过后经核实如未使用，可免费退票。3、验票后，不予退票。
+            </view>
+        </view>
+
+
+
+
+
+
+
+                </view>
+
+
+              </view>
+
+
+
+
+
+
+
+
+        </view>
+
+        
+
+
+
+
+      </view>
+      <view class="youke">
+        
+        <view class="youkeinfo">
+            <view style="font-weight:bold">
+              游客信息
+            </view>
+            <view class="myinfo">
+                <view>
+                  游玩人
+                </view>
+                <view>
+                  <view>
+                    秦大耍
+                  </view>
+                  <view>
+                    127******32
+                  </view>
+                  <view>
+                    4*****************7
+                  </view>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="order">
+          <view style="font-size:32rpx;font-weight:bold">
+            订单信息
+          </view>
+          <view>
+           <text>订单编号</text>
+           <text>{{orderinfoone.oid}}</text>
+          </view>
+          <view>
+            <text>下单时间</text>
+            <text>{{orderinfoone.buy_time}}</text>
+          </view>
+          <view>
+            <text>支付流水</text>
+            <text>2024042422001404881451079862</text>
+          </view>
+          <view>
+            <text>支付方式</text>
+            <text>支付宝</text>
+          </view>
+        </view>
+
+
+        <view class="sumprice">
+          <view>
+              <view>总额<text style="color:#fa5033;font-size:20rpx">￥</text><text style="color:#fa5033;font-weight:bold">{{sumprice}}</text></view>
+              <view style="color:#979797">明细</view>
+              <view onTap="payticket" class="zhifu" style="" >订单明细</view>
+              <view onTap="payticket" class="zhifu2" style="" >删除订单</view>
+          </view>
+         
+        </view>
+      </view>
+
+
+  </view>

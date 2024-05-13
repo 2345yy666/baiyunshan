@@ -1,0 +1,11 @@
+<view class="swiper-container">
+  <view class="item-container" style="transform: scale({{scale[0]}}); top: {{top[0]}}rpx;">
+    <image class="item" src="../../images/b1.webp"></image>
+  </view>
+  <view class="item-container main" style="transform: scale({{scale[1]}}); top: {{top[1]}}rpx;">
+    <image class="item" src="../../images/b1.webp"></image>
+  </view>
+  <view class="item-container" style="transform: scale({{scale[2]}}); top: {{top[2]}}rpx;">
+    <image class="item" src="../../images/b1.webp"></image>
+  </view>
+</view>

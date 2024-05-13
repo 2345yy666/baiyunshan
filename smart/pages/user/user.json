@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "用户中心",
+  "usingComponents": {
+    "avatar": "antd-mini/es/Avatar/index",
+    "list-item": "antd-mini/es/List/ListItem/index",
+    "demo-block": "../../components/DemoBlock/index"
+  },
+  "styleIsolation": "apply-shared"
+}

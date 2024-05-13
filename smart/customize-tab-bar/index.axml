@@ -1,0 +1,8 @@
+<view class="tabbar_box">
+  <view class="tabbar_nav {{index === 2 ? 'active' : ''}}" onTap="switchTab" data-index="{{index}}" data-item={{item}} a:for="{{tabBar.items}}" a:key="index">
+    <!-- 图标 -->
+    <image class="tabbar_icon" src="{{selected === index ? item.activeIcon : item.icon}}"></image>
+    <!-- 文字 -->
+    <text style="color:{{selected === index ? tabBar.selectedColor : tabBar.textColor}}" >{{item.name}}</text>
+  </view>
+</view>

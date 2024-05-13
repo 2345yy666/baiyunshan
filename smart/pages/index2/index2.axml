@@ -1,0 +1,18 @@
+<view>
+
+    <view id="fuwu">
+     游客服务
+    </view>
+    <view class="fuwulist">
+      <view a:for="{{servicelist}}" a:key="index" class="jutifuwu">
+          <view>
+            <image mode="scaleToFill" src="{{item.image}}" />
+          </view>
+          <view>
+            <view>{{item.title}}</view>
+            <view class="right"><image mode="scaleToFill" src="https://mp-e48a8988-7fa3-4691-bf31-127c9fc90a4c.cdn.bspapp.com/右右.png" /></view>
+            <view>{{item.content}}</view>
+          </view>
+      </view>
+    </view>
+</view>

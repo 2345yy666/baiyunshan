@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "订单列表",
+  "usingComponents": {
+    "tabs": "antd-mini/es/Tabs/index",
+    "tab-content": "antd-mini/es/Tabs/TabItem/index",
+    "icon": "antd-mini/es/Icon/index"
+  }
+}

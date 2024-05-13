@@ -1,0 +1,19 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box.center {
+  display: block;
+  height: 200px;
+}
+
+.centerContent {
+  width: 60%;
+  height: 500px;
+  margin: 24rpx auto;
+  padding: 24rpx;
+  background-color: #ccc;
+  box-sizing: border-box;
+}
